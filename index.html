@@ -1,47 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mengo</title>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mengo</title>
+  
+  <link rel="stylesheet" href="styles/styles.css" />
+  
+  <!-- Load 'Inter' from Google Fonts CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
 
-    <link rel="stylesheet" href="styles/styles.css" />
-
-    <!-- Load 'Inter' from Google Fonts CDN -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap"
-      rel="stylesheet"
-    />
-    <audio src="./melodia/hino-fla.mp3" autoplay loop="-1"></audio>
-    
+  
+  
   </head>
+  
   <body>
+  
     <div id="wrapper">
       <header>
-        <h1 class="left">
+        <h1 class="left middle">
           <!-- a esquerda -->
+  
         </h1>
-
+  
         <nav class="middle">
           <ul>
             <li><a href="#">Soluções</a></li>
             <li><a href="#">Contatos</a></li>
-            <li><a href="#">E-mail</a></li>
+            <li><a href="#" onclick="swal('Boa!', 'Deu tudo certo!', 'success');">AgendaLAB</a></li>
+            <li><a href="#" onclick="swal('Ops!...', 'Algo deu errado!', 'error');">E-mail</a></li>
+  
+  
           </ul>
         </nav>
-
-        <div class="right">
-          <!-- a direita -->
-        </div>
-      </header>
-      <main>
-         <h1>
-           <span>UMA VEZ FLAMENGO</span>
-           <span>SEMPRE</span>
-           <span>FLAMENGO</span>
-         </h1>
-      </main>
-      <footer>Melhor do mundo!</footer>
-    </div>
-  </body>
-</html>
+          <div class="right">
+            <!-- a direita -->
+          </div>
+        </header>
+        <main>
+           <h1>
+             <span>UMA VEZ FLAMENGO</span>
+             <span>SEMPRE</span>
+             <span>FLAMENGO</span>
+           </h1>
+        </main>
+        <footer>Melhor do mundo!</footer>
+      </div>
+    </body>
+  </html>
